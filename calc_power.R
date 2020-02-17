@@ -35,7 +35,8 @@ calc_watts_total=function(CdA,crr,wt,bike_wt,time,distance,elev,wind_speed=0){
               round(pwr_drag,1),'total power',round(tot_pwr,1)))
 }
 
-calc_speed=function(pwr,CdA,crr,wt,bike_wt,slope,wind_speed=0){
+calc_speed=function(pwr,CdA,crr,wt,bike_wt,slope){
+  # power in watts, weight, speed, etc. in imperial units
   mass=(wt+bike_wt)*.453592
   a=.5*CdA*1.225
   b=0
