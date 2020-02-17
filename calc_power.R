@@ -65,7 +65,8 @@ calc_watts_total(CdA,Crr,wt,bike_wt,5+43/60,1.25,129,3)
 # fairly easy climb on Lions Club, biking against wind
 calc_watts_total(CdA,Crr,wt,bike_wt,4,1.07,57,4)
 
-# experiment for how much time is saved per watt on flat stretch vs hilly stretch
+# experiment for how much time is saved by modifying various factors (i.e. pushing
+# harder on a flat stretch vs hilly stretch, drops, tires, aero)
 timesaved_hill=(6.8/calc_speed(200,CdA,crr,wt,bike_wt,.08)-6.8/calc_speed(220,CdA,crr,wt,bike_wt,.08))*60
 timesaved_flat=(24/calc_speed(200,CdA,crr,wt,bike_wt,0)-24/calc_speed(220,CdA,crr,wt,bike_wt,0))*60
 timesaved_drops=(10/calc_speed(200,0.4,crr,wt,bike_wt,0)-10/calc_speed(200,0.3,crr,wt,bike_wt,0))*60
